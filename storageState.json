@@ -1,0 +1,55 @@
+{
+  "cookies": [
+    {
+      "name": "renderCtx",
+      "value": "%7B%22pageId%22%3A%22b81da169-b801-462e-8256-7157ee3a5622%22%2C%22schema%22%3A%22Published%22%2C%22viewType%22%3A%22Published%22%2C%22brandingSetId%22%3A%22d1ef2384-05b0-43e2-8010-dffc869118a3%22%2C%22audienceIds%22%3A%22%22%7D",
+      "domain": "fisagrp--dev02.sandbox.my.site.com",
+      "path": "/servicios/s",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CookieConsentPolicy",
+      "value": "0:1",
+      "domain": "fisagrp--dev02.sandbox.my.site.com",
+      "path": "/",
+      "expires": 1785699828.482585,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "LSKey-c$CookieConsentPolicy",
+      "value": "0:1",
+      "domain": "fisagrp--dev02.sandbox.my.site.com",
+      "path": "/",
+      "expires": 1785699828.482702,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "BrowserId",
+      "value": "AyYYc2_ZEfCOn2Fh6vgW4Q",
+      "domain": "fisagrp--dev02.sandbox.my.site.com",
+      "path": "/",
+      "expires": 1785699829.955178,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://fisagrp--dev02.sandbox.my.site.com",
+      "localStorage": [
+        {
+          "name": "GlobalValueProviders__MUTEX_X",
+          "value": "12887000006b08c55c3fac88|1754163830071"
+        }
+      ]
+    }
+  ]
+}
