@@ -2,18 +2,18 @@ import { test, expect } from '@playwright/test';
 import path from 'path'
 import fs from 'fs';
 import { log } from 'console';
-import { LoginPage } from './borrador';
+//import { LoginPage } from './borrador';
 
- test('test con SS', async ({ page }) => {
-  test.setTimeout(120000);
-  const caseNumber = fs.readFileSync('caso.txt', 'utf8').trim();
-  console.log('Número de caso leído:', caseNumber);
+//  test('test con SS', async ({ page }) => {
+//   test.setTimeout(120000);
+//   const caseNumber = fs.readFileSync('caso.txt', 'utf8').trim();
+//   console.log('Número de caso leído:', caseNumber);
 
-  const loguearse = new LoginPage(page);
-  await loguearse.loginToApp(page);
+//   const loguearse = new LoginPage(page);
+//   await loguearse.loginToApp(page);
 
-  await page.screenshot({ path: 'screenshots/screenshot1.png' }); 
- });
+//   await page.screenshot({ path: 'screenshots/screenshot1.png' }); 
+//  });
 
 
 test('Comunidad: Crea caso', async ({ page }) => {
@@ -65,13 +65,13 @@ test('Comunidad: Crea caso', async ({ page }) => {
   const caseNumber = fs.readFileSync('caso.txt', 'utf8').trim();
   console.log('Número de caso leído:', caseNumber);
 
-  // await page.goto('https://fisagrp--dev02.sandbox.my.salesforce.com/');
-  // await page.getByRole('textbox', { name: 'Username' }).fill('kevin.melendez@fisa.ndev02');
-  // await page.getByRole('textbox', { name: 'Password' }).fill('Kevin123');
-  // await page.getByRole('button', { name: 'Log In to Sandbox' }).click();
-  //await page.goto('https://fisagrp--dev02.sandbox.my.salesforce.com/');
-  const loguearse = new LoginPage(page);
-  await loguearse.loginToApp(page);
+  await page.goto('https://fisagrp--dev02.sandbox.my.salesforce.com/');
+  await page.getByRole('textbox', { name: 'Username' }).fill('kevin.melendez@fisa.ndev02');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Kevin123');
+  await page.getByRole('button', { name: 'Log In to Sandbox' }).click();
+  await page.goto('https://fisagrp--dev02.sandbox.my.salesforce.com/');
+  //const loguearse = new LoginPage(page);
+ // await loguearse.loginToApp(page);
 
   await page.screenshot({ path: 'screenshots/screenshot1.png' });
   
